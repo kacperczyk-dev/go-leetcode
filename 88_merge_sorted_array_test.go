@@ -5,7 +5,7 @@ import (
     "testing"
 )
 
-func TestReverseRunes(t *testing.T) {
+func TestMerge(t *testing.T) {
 	type In struct{
 		nums1 []int 
 		m int 
