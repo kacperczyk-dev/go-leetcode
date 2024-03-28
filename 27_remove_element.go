@@ -1,5 +1,7 @@
 package main
 
+// https://leetcode.com/problems/remove-element
+
 func removeElement(nums []int, val int) int {
     idx := len(nums) - 1
     valCnt := 0
