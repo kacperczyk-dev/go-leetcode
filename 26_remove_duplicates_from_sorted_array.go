@@ -13,3 +13,5 @@ func removeDuplicates(nums []int) int {
     }
     return ii
 }
+
+// Above is already the best solution
