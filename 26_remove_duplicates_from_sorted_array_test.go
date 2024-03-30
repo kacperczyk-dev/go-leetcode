@@ -27,7 +27,7 @@ func TestRemoveDuplicates(t *testing.T) {
         copy(origNums, c.in)
 		l := removeDuplicates(c.in)
         if !reflect.DeepEqual(c.in[:l], c.want.nums) || l != c.want.l {
-            t.Errorf("removeElement(%v) == %v, want %v", origNums, l, c.want.l)
+            t.Errorf("removeDuplicates(%v) == %v, want %v", origNums, l, c.want.l)
         }
     }
 }
