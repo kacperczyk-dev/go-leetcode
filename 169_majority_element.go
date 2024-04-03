@@ -3,19 +3,18 @@ package main
 // https://leetcode.com/problems/majority-element/description/
 // time = O(n), space O(n)
 func majorityElement(nums []int) int {
-    l := len(nums)
-    m := make(map[int]int)
-    r := 0
-    for _, v := range nums {
-        m[v] += 1
-        if m[v] > l/2 {
-            r = v
-            break
-        }
-    }
-    return r
+	l := len(nums)
+	m := make(map[int]int)
+	r := 0
+	for _, v := range nums {
+		m[v] += 1
+		if m[v] > l/2 {
+			r = v
+			break
+		}
+	}
+	return r
 }
-
 
 // Best solution: time = O(n), space = O(n)
 // func majorityElement(nums []int) int {

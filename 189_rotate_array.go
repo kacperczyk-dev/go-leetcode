@@ -15,16 +15,15 @@ package main
 //     copy(nums, n)
 // }
 
-
 // Own solution: in-place, space = O(1)
-func rotate(nums []int, k int)  {
-    l := len(nums)
-    kk := k % l // kk is equal to the rotation without fullcircles
-    if kk == 0 { // if kk = 0 we do only full circle(s)
-        return
-    }
-    n := make([]int, k, k)
-    copy(n, nums[l-kk:l])
-    copy(nums[kk:], nums[:l-kk])
-    copy(nums[:kk], n)
+func rotate(nums []int, k int) {
+	l := len(nums)
+	kk := k % l  // kk is equal to the rotation without fullcircles
+	if kk == 0 { // if kk = 0 we do only full circle(s)
+		return
+	}
+	n := make([]int, k, k)
+	copy(n, nums[l-kk:l])
+	copy(nums[kk:], nums[:l-kk])
+	copy(nums[:kk], n)
 }
