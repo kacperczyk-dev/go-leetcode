@@ -1,5 +1,6 @@
 package main
 
+// https://leetcode.com/problems/jump-game/description/
 func canJump(nums []int) bool {
 	if len(nums) == 1 {
 		return true

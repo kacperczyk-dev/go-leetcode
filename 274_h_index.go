@@ -1,5 +1,6 @@
 package main
 
+// https://leetcode.com/problems/h-index/description/
 func hIndex(citations []int) int {
 	if len(citations) == 1 && citations[0] > 0 {
 		return 1

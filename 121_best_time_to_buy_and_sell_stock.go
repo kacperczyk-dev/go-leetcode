@@ -1,5 +1,6 @@
 package main
 
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 func maxProfit(prices []int) int {
 	l := len(prices)
 	max := 0
