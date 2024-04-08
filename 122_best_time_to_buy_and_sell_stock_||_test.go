@@ -16,7 +16,7 @@ func TestMaxProfitII(t *testing.T) {
 	for _, c := range cases {
 		got := maxProfitII(c.in)
 		if got != c.want {
-			t.Errorf("maxProfit(%v) == %v, want %v", c.in, got, c.want)
+			t.Errorf("maxProfitII(%v) == %v, want %v", c.in, got, c.want)
 		}
 	}
 }

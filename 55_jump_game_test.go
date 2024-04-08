@@ -18,7 +18,7 @@ func TestCanJump(t *testing.T) {
 	for _, c := range cases {
 		got := canJump(c.in)
 		if got != c.want {
-			t.Errorf("majorityElement(%v) == %v, want %v", c.in, got, c.want)
+			t.Errorf("canJump(%v) == %v, want %v", c.in, got, c.want)
 		}
 	}
 }

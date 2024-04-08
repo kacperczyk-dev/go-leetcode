@@ -25,7 +25,7 @@ func TestRotateArray(t *testing.T) {
 		rotate(c.in.arr, c.in.k)
 		got := c.in.arr
 		if !reflect.DeepEqual(got, c.want) {
-			t.Errorf("merge(%v, %v) == %v, want %v", c.in.arr, c.in.k, got, c.want)
+			t.Errorf("rotate(%v, %v) == %v, want %v", c.in.arr, c.in.k, got, c.want)
 		}
 	}
 }
