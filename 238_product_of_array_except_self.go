@@ -1,6 +1,7 @@
 package main
 
 /*
+https://leetcode.com/problems/product-of-array-except-self/description/
 pLeft[i] holds the product of all elements on the left of i in nums
 pRight[j] holds the product of all elements on the right of j in nums
 pLeft[i] * pRight[i] = product of all elements from nums except for nums[i]
